@@ -1,9 +1,5 @@
 package neuralnetworkapi.src.imports;
 
-public class unitNeuron{
-
+public class network{
     
-
 }
-
-
