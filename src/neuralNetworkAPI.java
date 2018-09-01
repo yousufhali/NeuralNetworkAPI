@@ -25,9 +25,15 @@ public class neuralNetworkAPI{
     }
 
     public void assignNumberOfLayers(Integer layersCount){
-
+        neuralNetwork.assignNumberOfLayers(layersCount);
     }
 
-    public void ()
+    public void assignNumberOfNeuronsInLayer(Integer layerIndex, Integer numberOfNeurons){
+        neuralNetwork.assignNumberOfNeuronsInLayer(layerIndex,numberOfNeurons);
+    }
+
+    public void assignWeightsForNeuron (Integer layerIndex, Integer neuronIndex, ArrayList<Double> weightsIn, ArrayList<Double> weightsOut){
+        assignWeightsForNeuron(layerIndex, neuronIndex, weightsIn, weightsOut);
+    }
 }
 
