@@ -17,19 +17,30 @@ public class unitLayer{
     }
 
     public void unitLayer(layerType typeToSet, Integer neuronCount){
-        
+        type = typeToSet;
+        this.neuronsCount = neuronCount;
+
+        for (int i = 0 ; i<neuronCount; i++){
+            neurons.add(new unitNeuron());
+        }
     }
 
     public void unitLayer(Integer neuronCount){
-
+        this.neuronsCount = neuronCount;
+        for (int i = 0 ; i< neuronCount; i++){
+            neurons.add(new unitNeuron());
+        }
     }
 
     public void unitLayer(layerType typeToSet){
-
+        type = typeToSet;
     }
 
     public void assignNeuronList (ArrayList<unitNeuron> neurons ){
-
+        this.neurons = new ArrayList<unitNeuron>();
+        for (int i = 0; i< neurons.size(); i++){
+            this.neurons.add(neurons.get(i));
+        }
     }
 
     public void copyLayer (unitLayer layerToCopy){
