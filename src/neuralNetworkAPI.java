@@ -2,7 +2,7 @@ package neuralnetworkapi.src;
 
 import neuralnetwork.src.imports.network;
 
-public class neuralNetworkAPI{
+public class neuralNetworkAPI extends Algorithms{
 
     network neuralNetwork;
 
@@ -35,5 +35,7 @@ public class neuralNetworkAPI{
     public void assignWeightsForNeuron (Integer layerIndex, Integer neuronIndex, ArrayList<Double> weightsIn, ArrayList<Double> weightsOut){
         assignWeightsForNeuron(layerIndex, neuronIndex, weightsIn, weightsOut);
     }
-}
 
+
+    //@TODO: Add common configurations
+}
